@@ -2,16 +2,16 @@
 
 In this Code Pattern, we will create an Alexa skill as a vocal interface towards IBM Watson Assistant. We will make use of Node-Red to act as a service for integration. As a final result of this Code Pattern you will be able to talk to Alexa and ask for weather information on a specific location using your own chatbot and weather services.
 
-#Steps
+# Steps
 
-###1. Clone the repo
+### 1. Clone the repo
 
 Clone the `alexa-Watson` repo locally.
 In a terminal, run:
 
 `git clone https://github.com/yvesdebeer/alexa-watson.git`
 
-###2. Create a Watson Assistant workspace
+### 2. Create a Watson Assistant workspace
 
 Sign up for an [IBM CLoud](https://ibm.biz/BdzMQp) if you don't have an IBM Cloud account yet.
 
@@ -50,7 +50,7 @@ This will allow you to modify the Intents, Entities and Dialog.
 
 Click on `Try it` in the top right corner of the screen and start your first conversation. For example you could ask 'What do you know about me' or 'What's the weather'.
 
-###3. Create a Node-Red development environment
+### 3. Create a Node-Red development environment
 
 * On the IBM Cloud Dashboard, click `Catalog` on the top bar and search for 'Node-RED'.
 * Select the `Node-RED Starter` tile
@@ -72,7 +72,7 @@ Import a Node-Red flow into the canvas:
 * Fill in the 'API Key', Service Endpoint, and 'Assistant ID' with the values you noted earlier.
 * Finally hit the red `Deploy' button on the top.
 
-###4. Create an Alexa skill
+### 4. Create an Alexa skill
 
 Sign up for an Amazon Developer Portal account [here](https://developer.amazon.com/).
 
@@ -90,7 +90,7 @@ Go to [https://developer.amazon.com/alexa/console/ask](https://developer.amazon.
 * Scroll down to 'Intent Slots (#)'
 * Use the 'Select a slot type' pulldown to give 'EveryThingSlot' the slot type 'BAG_OF_WORDS'.
 
-**Configure the endpoint:**
+**Configure the endpoint: **
 
 * Click on `Endpoint` in the sidebar.
 * Select HTTPS as the Service Endpoint Type.
@@ -98,7 +98,7 @@ Go to [https://developer.amazon.com/alexa/console/ask](https://developer.amazon.
 * Use the pull-down to select 'My development endpoint is a sub-domain of a domain that has a wildcard certificate from a certificate authority'.
 * Click the `Save Endpoints` button on the top!
 
-###5. Talk to it
+### 5. Talk to it
 
 * Use the `Test` tab in the Amazon developer console.
 
@@ -110,7 +110,7 @@ You can invite others to test it with the beta test feature. In order to be elig
 
 You probably shouldn't publish this example, but you are now ready to create and publish your own Alexa skill.
 
-###6. Create you own weather information service
+### 6. Create you own weather information service
 
 Most weather API's require geo coordinates in order to provide detailed weather information. This makes it hard to enter via a chatbot. Therefore we will make use of a Geo Coding API which will convert a named location into lat/lon coordinates. For the weather service, we can make use of the Weather Company API. This service is available for free for registered IBM Cloud users (not Lite accounts). Alternatively access to this API is granted during the 'CallForCode' challenge (until October 13,2019).
 
@@ -134,7 +134,7 @@ Most weather API's require geo coordinates in order to provide detailed weather 
 
 You can now test the weather service flow by injecting some data via the inject nodes and verifying the results within the debug panel of Node-Red.
 
-###7. Create a Cloud Functions for access the weather service from within the Watson assistant
+### 7. Create a Cloud Functions for access the weather service from within the Watson assistant
 
 * Goto the IBM Cloud Dashboard and select `Functions`from the top left 'Hamburger-icon' menu
 * Click `Actions` from the left menu
@@ -154,7 +154,7 @@ Now you can test the Cloud function  via the `Invoke`button, but first you need 
 * Now click `Invoke` and check the result
 * Additionally you can check the 'Debug' window within Node-Red and watch the result of this service being called.
 
-###8. Configure the Watson Assistant dialog to call the weather Cloud function
+### 8. Configure the Watson Assistant dialog to call the weather Cloud function
 
 * Open the Watson Assistant skill 'Alexa Sample' and select the `Dialog`tab
 * Click the 'Weather'-node
