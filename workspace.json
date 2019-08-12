@@ -1,0 +1,1213 @@
+{
+  "name": "Alexa Sample",
+  "intents": [
+    {
+      "intent": "whatdoyouknow",
+      "examples": [
+        {
+          "text": "What do you know about me?"
+        }
+      ]
+    },
+    {
+      "intent": "goodbyes",
+      "examples": [
+        {
+          "text": "should go"
+        },
+        {
+          "text": "then bye"
+        },
+        {
+          "text": "bye bye"
+        },
+        {
+          "text": "adieu"
+        },
+        {
+          "text": "swag out"
+        },
+        {
+          "text": "soon"
+        },
+        {
+          "text": "so long"
+        },
+        {
+          "text": "signing out"
+        },
+        {
+          "text": "signing off"
+        },
+        {
+          "text": "shut down"
+        },
+        {
+          "text": "shutdown"
+        },
+        {
+          "text": "adios"
+        },
+        {
+          "text": "should be going"
+        },
+        {
+          "text": "see you"
+        },
+        {
+          "text": "see ya soon"
+        },
+        {
+          "text": "see ya later"
+        },
+        {
+          "text": "see ya"
+        },
+        {
+          "text": "run"
+        },
+        {
+          "text": "over and out"
+        },
+        {
+          "text": "out of time"
+        },
+        {
+          "text": "ok bye"
+        },
+        {
+          "text": "no, bye!"
+        },
+        {
+          "text": "nice day"
+        },
+        {
+          "text": "my time is up"
+        },
+        {
+          "text": "logging off"
+        },
+        {
+          "text": "leave"
+        },
+        {
+          "text": "laters"
+        },
+        {
+          "text": "later"
+        },
+        {
+          "text": "thanks byebye"
+        },
+        {
+          "text": "i said goodbye"
+        },
+        {
+          "text": "I'm leaving"
+        },
+        {
+          "text": "Hi, Watson. I want to stop car"
+        },
+        {
+          "text": "hey stop here"
+        },
+        {
+          "text": "toodles"
+        },
+        {
+          "text": "Have a nice day"
+        },
+        {
+          "text": "gtg"
+        },
+        {
+          "text": "gotta run"
+        },
+        {
+          "text": "gotta go"
+        },
+        {
+          "text": "good night"
+        },
+        {
+          "text": "good day"
+        },
+        {
+          "text": "good bye"
+        },
+        {
+          "text": "goodbye"
+        },
+        {
+          "text": "going"
+        },
+        {
+          "text": "go"
+        },
+        {
+          "text": "finally reached home.. lock up and cock up.. good nite and good bye for ever"
+        },
+        {
+          "text": "farewell"
+        },
+        {
+          "text": "cya"
+        },
+        {
+          "text": "bye now"
+        },
+        {
+          "text": "bye"
+        },
+        {
+          "text": "au revoir"
+        }
+      ]
+    },
+    {
+      "intent": "weather",
+      "examples": [
+        {
+          "text": "Brussels"
+        },
+        {
+          "text": "Gent"
+        },
+        {
+          "text": "Why is it raining today?"
+        },
+        {
+          "text": "Why is it raining again"
+        },
+        {
+          "text": "Why is it raining?"
+        },
+        {
+          "text": "Why is it raining"
+        },
+        {
+          "text": "why is it raining ?"
+        },
+        {
+          "text": "Whn will this rain stop?"
+        },
+        {
+          "text": "when wil the rain end?"
+        },
+        {
+          "text": "when will this rain end?"
+        },
+        {
+          "text": "when will this rain end"
+        },
+        {
+          "text": "when will the sun set?"
+        },
+        {
+          "text": "when will the sun come out"
+        },
+        {
+          "text": "when will the sun begin?"
+        },
+        {
+          "text": "when will the sun appear?"
+        },
+        {
+          "text": "When will the rain stop"
+        },
+        {
+          "text": "when will the rain arrive"
+        },
+        {
+          "text": "When will it be sunny?"
+        },
+        {
+          "text": "When will it be sunny"
+        },
+        {
+          "text": "when will be the rain end ?"
+        },
+        {
+          "text": "when were you there when rain is starch"
+        },
+        {
+          "text": "when the rain stops?"
+        },
+        {
+          "text": "when the rain of end"
+        },
+        {
+          "text": "when the rail will end"
+        },
+        {
+          "text": "when rain ends"
+        },
+        {
+          "text": "when rain"
+        },
+        {
+          "text": "when all the rain and"
+        },
+        {
+          "text": "what would be the weather 50 km ahead?"
+        },
+        {
+          "text": "What weather do you like?"
+        },
+        {
+          "text": "what weather?"
+        },
+        {
+          "text": "What us weather in 08854"
+        },
+        {
+          "text": "what time will the weather change"
+        },
+        {
+          "text": "what's the weather out would be to destination"
+        },
+        {
+          "text": "whats the weather outside"
+        },
+        {
+          "text": "whats the weather like right now"
+        },
+        {
+          "text": "what's the weather"
+        },
+        {
+          "text": "Whats the temperature outside?"
+        },
+        {
+          "text": "What's the temperature outside?"
+        },
+        {
+          "text": "whats the outside air temperature?"
+        },
+        {
+          "text": "what is the weather like"
+        },
+        {
+          "text": "What is the weather going to be like"
+        },
+        {
+          "text": "what is the tempreture outside"
+        },
+        {
+          "text": "What is the temperature outside?"
+        },
+        {
+          "text": "What is the temperature outside"
+        },
+        {
+          "text": "what is the rain?"
+        },
+        {
+          "text": "what is the outside temperature?"
+        },
+        {
+          "text": "what abt weather today?"
+        },
+        {
+          "text": "what about weather today?"
+        },
+        {
+          "text": "What about weather?"
+        },
+        {
+          "text": "What about weather"
+        },
+        {
+          "text": "weather is cool."
+        },
+        {
+          "text": "watson when this rain will over"
+        },
+        {
+          "text": "the weather is important to me"
+        },
+        {
+          "text": "The sun is out"
+        },
+        {
+          "text": "tell me the weather"
+        },
+        {
+          "text": "rain rain go away"
+        },
+        {
+          "text": "raining now"
+        },
+        {
+          "text": "oops... it's raining again"
+        },
+        {
+          "text": "oh, it started to rain"
+        },
+        {
+          "text": "Oh, it's a sunny day"
+        },
+        {
+          "text": "make it stop raining"
+        },
+        {
+          "text": "look up the weather in tel aviv"
+        },
+        {
+          "text": "look up the weather"
+        },
+        {
+          "text": "i want to  weather news."
+        },
+        {
+          "text": "I want to see weather forecasts"
+        },
+        {
+          "text": "I want to know the weather"
+        },
+        {
+          "text": "it's sunny now"
+        },
+        {
+          "text": "it's sunny, maybe we don't need the lights"
+        },
+        {
+          "text": "It's rain today."
+        },
+        {
+          "text": "Its Raining now"
+        },
+        {
+          "text": "its raining now ?"
+        },
+        {
+          "text": "it's raining ..."
+        },
+        {
+          "text": "its is raining"
+        },
+        {
+          "text": "it's hot"
+        },
+        {
+          "text": "it's getting cold"
+        },
+        {
+          "text": "it's cold today"
+        },
+        {
+          "text": "It's cold here"
+        },
+        {
+          "text": "It's become sunny now"
+        },
+        {
+          "text": "It's a rainy day"
+        },
+        {
+          "text": "it is raining, what can you do ?"
+        },
+        {
+          "text": "it isn't raining anymore"
+        },
+        {
+          "text": "It is going to rain"
+        },
+        {
+          "text": "it is cloudy now"
+        },
+        {
+          "text": "it is a sunny day"
+        },
+        {
+          "text": "is raining today"
+        },
+        {
+          "text": "is raining now"
+        },
+        {
+          "text": "Is raining?"
+        },
+        {
+          "text": "is raining"
+        },
+        {
+          "text": "is it sunny out?"
+        },
+        {
+          "text": "is it rainning right?"
+        },
+        {
+          "text": "Is it rainning now?"
+        },
+        {
+          "text": "is it raining"
+        },
+        {
+          "text": "is it gonna be raining"
+        },
+        {
+          "text": "is it going to rain when we arrive?"
+        },
+        {
+          "text": "is it going to rain today?"
+        },
+        {
+          "text": "is it going to rain later today"
+        },
+        {
+          "text": "is it going to rain for the entire day?"
+        },
+        {
+          "text": "Is it going to rain all day?"
+        },
+        {
+          "text": "Is it going to rain?"
+        },
+        {
+          "text": "is it going to rain"
+        },
+        {
+          "text": "is it dark outside"
+        },
+        {
+          "text": "is it a sunny day"
+        },
+        {
+          "text": "is it a nice day today?"
+        },
+        {
+          "text": "is it a clear day ?"
+        },
+        {
+          "text": "how warm is it"
+        },
+        {
+          "text": "how`s the wheather"
+        },
+        {
+          "text": "how's the wether"
+        },
+        {
+          "text": "how many degrees are outside?"
+        },
+        {
+          "text": "how long will it rain"
+        },
+        {
+          "text": "How long until the rain ends?"
+        },
+        {
+          "text": "how long till it rains"
+        },
+        {
+          "text": "how long the rain?"
+        },
+        {
+          "text": "how is the weater?"
+        },
+        {
+          "text": "How is the typooon"
+        },
+        {
+          "text": "How is the climate?"
+        },
+        {
+          "text": "how hot is it outside"
+        },
+        {
+          "text": "wow .. it is raining in front of my car"
+        },
+        {
+          "text": "how cold is it outside"
+        },
+        {
+          "text": "how cold is it out"
+        },
+        {
+          "text": "how cold"
+        },
+        {
+          "text": "How about this rain"
+        },
+        {
+          "text": "Hi, please tell me something about weather"
+        },
+        {
+          "text": "hey watson it's not raining"
+        },
+        {
+          "text": "Harvard is it going to rain"
+        },
+        {
+          "text": "Good weather, ya?"
+        },
+        {
+          "text": "do you think will rain?"
+        },
+        {
+          "text": "do you know weather today"
+        },
+        {
+          "text": "do I need a jacket"
+        },
+        {
+          "text": "Does the weather get worse"
+        },
+        {
+          "text": "Does It raining all day?"
+        },
+        {
+          "text": "check weather"
+        },
+        {
+          "text": "check the wheather"
+        },
+        {
+          "text": "check the wether"
+        },
+        {
+          "text": "check the weather"
+        },
+        {
+          "text": "Check the weater"
+        },
+        {
+          "text": "Can you tell me what the weather looks like?"
+        },
+        {
+          "text": "can you tell me what's the weather will be in one hour if we keep goint in this direction?"
+        },
+        {
+          "text": "Can we go someplace where it's not raining?"
+        },
+        {
+          "text": "how hot"
+        },
+        {
+          "text": "Will rain stop?"
+        },
+        {
+          "text": "will rain end?"
+        },
+        {
+          "text": "will it rain much longer?"
+        },
+        {
+          "text": "will it be warm today?"
+        },
+        {
+          "text": "Why it is raining?"
+        },
+        {
+          "text": "why it is raining"
+        },
+        {
+          "text": "hi, what is the temperature in milan"
+        }
+      ]
+    },
+    {
+      "intent": "start",
+      "examples": [
+        {
+          "text": "start skill"
+        }
+      ]
+    },
+    {
+      "intent": "greetings",
+      "examples": [
+        {
+          "text": "hiya"
+        },
+        {
+          "text": "fdsafsaHi watson"
+        },
+        {
+          "text": "buenas dias"
+        },
+        {
+          "text": "bonjour"
+        },
+        {
+          "text": "aloha"
+        },
+        {
+          "text": "buenos dias"
+        },
+        {
+          "text": "ciao"
+        },
+        {
+          "text": "yo"
+        },
+        {
+          "text": "yello"
+        },
+        {
+          "text": "What's up?"
+        },
+        {
+          "text": "What's up ?"
+        },
+        {
+          "text": "What's up"
+        },
+        {
+          "text": "what r u doing"
+        },
+        {
+          "text": "what doing"
+        },
+        {
+          "text": "sup"
+        },
+        {
+          "text": "say hello to me"
+        },
+        {
+          "text": "namaste"
+        },
+        {
+          "text": "I would like you to say hello"
+        },
+        {
+          "text": "howdy"
+        },
+        {
+          "text": "How are you doing"
+        },
+        {
+          "text": "hola como estas"
+        },
+        {
+          "text": "Hola"
+        },
+        {
+          "text": "Hi, Watson, my name is John"
+        },
+        {
+          "text": "Hi watson"
+        },
+        {
+          "text": "hi to whom had like"
+        },
+        {
+          "text": "hi there"
+        },
+        {
+          "text": "Hi, my name is Michel"
+        },
+        {
+          "text": "Hi, my name is Diego"
+        },
+        {
+          "text": "hi how are u"
+        },
+        {
+          "text": "hi"
+        },
+        {
+          "text": "hey there"
+        },
+        {
+          "text": "heya"
+        },
+        {
+          "text": "yo my man"
+        },
+        {
+          "text": "hey"
+        },
+        {
+          "text": "Hello Watson"
+        },
+        {
+          "text": "Hello, My name is John?"
+        },
+        {
+          "text": "hello, my name is esteban"
+        },
+        {
+          "text": "Hello, how are you"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "greetings"
+        },
+        {
+          "text": "good morning"
+        },
+        {
+          "text": "good how are you"
+        },
+        {
+          "text": "good evening"
+        },
+        {
+          "text": "good day"
+        },
+        {
+          "text": "Good afternoon."
+        },
+        {
+          "text": "good"
+        },
+        {
+          "text": "g'day"
+        },
+        {
+          "text": "feeling bit low"
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "entity": "sys-time",
+      "values": []
+    },
+    {
+      "entity": "location",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Köln",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Berlin",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Hamburg",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Munich",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Baardegem",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Brussels",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Salzkotten",
+          "synonyms": []
+        }
+      ]
+    },
+    {
+      "entity": "sys-number",
+      "values": []
+    },
+    {
+      "entity": "sys-date",
+      "values": []
+    },
+    {
+      "entity": "sys-location",
+      "values": []
+    }
+  ],
+  "language": "en",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-07-10"
+    },
+    "from-sample": true
+  },
+  "skill_id": "28f590f4-efda-4fb7-98ba-3ff93329aa79",
+  "webhooks": [
+    {
+      "url": "https://ydb-nodered.eu-gb.mybluemix.net/webhook",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "description": "Simple Alexa skill",
+  "dialog_nodes": [
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_43_1506042392118",
+      "metadata": {},
+      "event_name": "filled",
+      "dialog_node": "handler_46_1506042407688",
+      "previous_sibling": "handler_44_1506042392118"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_43_1506042392118",
+      "context": {
+        "location": "@location"
+      },
+      "metadata": {},
+      "conditions": "@location",
+      "event_name": "input",
+      "dialog_node": "handler_44_1506042392118",
+      "previous_sibling": "handler_45_1506042392118"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": "What is your location?"
+      },
+      "parent": "slot_43_1506042392118",
+      "metadata": {},
+      "event_name": "focus",
+      "dialog_node": "handler_45_1506042392118"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1565352374097",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1565352374098",
+      "previous_sibling": "handler_8_1565352374098"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_8_1565352374097",
+      "context": {
+        "location": "@sys-location"
+      },
+      "conditions": "@sys-location",
+      "event_name": "input",
+      "dialog_node": "handler_8_1565352374098"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "I don't know anything about you.  Where do you live?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_18_1506038662620",
+      "event_name": "focus",
+      "dialog_node": "handler_39_1506041983631",
+      "previous_sibling": "slot_43_1506042392118"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "node_18_1506038662620",
+      "event_name": "focus",
+      "dialog_node": "handler_19_1506038719480",
+      "previous_sibling": "handler_29_1506039655862"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_18_1506038662620",
+      "metadata": {},
+      "variable": "$location",
+      "dialog_node": "slot_43_1506042392118",
+      "previous_sibling": "slot_3_1513634556757"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_18_1506038662620",
+      "event_name": "generic",
+      "dialog_node": "handler_29_1506039655862",
+      "previous_sibling": "handler_39_1506041983631"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_18_1506038662620",
+      "metadata": {},
+      "variable": "$location",
+      "dialog_node": "slot_3_1513634556757"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1513634556757",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1513634556757",
+      "previous_sibling": "handler_4_1513634556757"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_3_1513634556757",
+      "context": {
+        "location": "@sys-location"
+      },
+      "conditions": "@sys-location",
+      "event_name": "input",
+      "dialog_node": "handler_4_1513634556757"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Please tell me your location."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1506037418284",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1506037514790",
+      "previous_sibling": "slot_8_1565352374097"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1506037418284",
+      "actions": [
+        {
+          "name": "IBMBelgium_dev/default/getWeather.json",
+          "type": "web_action",
+          "parameters": {
+            "location": "$location"
+          },
+          "result_variable": "weather"
+        }
+      ],
+      "context": {
+        "variable_name": "variable_value"
+      },
+      "metadata": {},
+      "conditions": "$location",
+      "dialog_node": "node_11_1506037630926",
+      "previous_sibling": "node_7_1565268686201"
+    },
+    {
+      "type": "slot",
+      "title": "slot_8_1506037514797",
+      "output": {},
+      "parent": "node_5_1506037418284",
+      "variable": "$location",
+      "dialog_node": "slot_8_1506037514797",
+      "previous_sibling": "node_11_1506037630926"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1506037418284",
+      "variable": "$location",
+      "dialog_node": "slot_8_1565352374097",
+      "previous_sibling": "slot_8_1506037514797"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "text": {
+          "values": [
+            "The weather for $location today is: $weather.text"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_5_1506037418284",
+      "conditions": "#weather",
+      "dialog_node": "node_7_1565268686201"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_9_1506037514797",
+      "output": {},
+      "parent": "slot_8_1506037514797",
+      "context": {
+        "location": "@location"
+      },
+      "conditions": "@location",
+      "event_name": "input",
+      "dialog_node": "handler_9_1506037514797",
+      "previous_sibling": "handler_10_1506037514797"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_10_1506037514797",
+      "output": {
+        "text": {
+          "values": [
+            "In what location?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1506037514797",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1506037514797"
+    },
+    {
+      "type": "response_condition",
+      "title": "response_9_1565273660158",
+      "output": {
+        "text": {
+          "values": [
+            "Hello. How can I help you?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "Welcome",
+      "context": {
+        "location": null
+      },
+      "conditions": "",
+      "dialog_node": "response_9_1565273660158"
+    },
+    {
+      "type": "frame",
+      "title": "What do you know about me",
+      "output": {
+        "text": {
+          "values": [
+            "I know you live in $location."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "metadata": {
+        "fallback": "leave"
+      },
+      "conditions": "#whatdoyouknow",
+      "dialog_node": "node_18_1506038662620",
+      "previous_sibling": "node_17_1506038584724"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "text": {
+          "values": [
+            "I didn't understand. You can try rephrasing.",
+            "Can you reword your statement? I'm not understanding.",
+            "I didn't get your meaning."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_18_1506038662620"
+    },
+    {
+      "type": "standard",
+      "title": "Goodbyes",
+      "output": {
+        "text": {
+          "values": [
+            "Okay! Talk to ya later."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "conditions": "#goodbyes",
+      "dialog_node": "node_17_1506038584724",
+      "previous_sibling": "node_5_1506037418284"
+    },
+    {
+      "type": "frame",
+      "title": "Weather",
+      "output": {},
+      "metadata": {
+        "fallback": "leave",
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#weather",
+      "dialog_node": "node_5_1506037418284",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "metadata": {
+        "callout": {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "greeting": "Hello"
+          },
+          "result_variable": "webhook_result_1"
+        },
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "welcome || #greetings",
+      "dialog_node": "Welcome",
+      "previous_sibling": "node_4_1506037241646"
+    },
+    {
+      "type": "standard",
+      "title": "Start skill",
+      "output": {
+        "text": {
+          "values": [
+            "Hi, I can help you to find current weather conditions."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "conditions": "#start",
+      "dialog_node": "node_4_1506037241646"
+    }
+  ],
+  "workspace_id": "a7ef0478-b5dc-4f48-a50c-4e6750e9fda7",
+  "counterexamples": [
+    {
+      "text": "aho"
+    },
+    {
+      "text": "asdasdasda"
+    },
+    {
+      "text": "asdasidjiwe"
+    },
+    {
+      "text": "cats are my favorite animal"
+    },
+    {
+      "text": "when will it be funny"
+    },
+    {
+      "text": "which color is best for wedding"
+    }
+  ],
+  "learning_opt_out": false,
+  "status": "Available"
+}
