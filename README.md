@@ -106,7 +106,7 @@ Go to [https://developer.amazon.com/alexa/console/ask](https://developer.amazon.
 * Scroll down to 'Intent Slots (#)'
 * Use the 'Select a slot type' pulldown to give 'EveryThingSlot' the slot type 'BAG_OF_WORDS'.
 
-**Configure the endpoint: **
+**Configure the endpoint:**
 
 * Click on `Endpoint` in the sidebar.
 * Select HTTPS as the Service Endpoint Type.
