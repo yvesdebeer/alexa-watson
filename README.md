@@ -1,6 +1,22 @@
 ## Using Watson Assistant with Alexa
 
-In this Code Pattern, we will create an Alexa skill as a vocal interface towards IBM Watson Assistant. We will make use of Node-Red to act as a service for integration. As a final result of this Code Pattern you will be able to talk to Alexa and ask for weather information on a specific location using your own chatbot and weather services.
+In this Code Pattern, we will create an Alexa skill as a vocal interface towards IBM Watson Assistant. We will make use of Node-Red to act as a service for integration. As a final result of this Code Pattern you will be able to talk to Amazon Alexa and ask for weather information on a specific location using your own chatbot and weather services.
+
+![](https://github.com/yvesdebeer/alexa-watson/blob/master/images/flow.png?raw=true)
+
+# Flow
+
+1. User says "Alexa, ask Watson...".
+2. Alexa invokes a Web Service with input text on Node-Red.
+3. The Node-Red flow calls Watson Assistant and stores a session ID within Node-Red.
+4. Watson Assistant reports back to Alexa with a response, either a message or a response from a weather service.
+5. In case of a weather information request, Watson Assistant will call a Cloud Function which will then call a custom weather web service, also defined in Node-Red.
+
+# Included components
+
+* [Watson Assistant](https://www.ibm.com/watson/ai-assistant/): Create a chatbot with a program that conducts a conversation via auditory or textual methods.
+* [OpenWhisk](https://cloud.ibm.com/openwhisk): Execute code on demand in a highly scalable, serverless environment.
+* [Node-Red](https://nodered.org/): An open-source programming tool for wiring together hardware devices, APIs and online services.
 
 # Steps
 
@@ -162,7 +178,6 @@ Now you can test the Cloud function  via the `Invoke`button, but first you need 
 * Click the 3 dots next to 'Then set context' and `Open JSON editor`
 * Modify the action name and replace it with the one you noted down in the previous step (only use the portions of the URL after .../api/v1/web/)
 * Click `Save` and test either using the `Try it` button or directly via Alexa Echo or Simulator.
-
 
 
 
