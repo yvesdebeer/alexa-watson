@@ -37,7 +37,7 @@ Create the Watson Assistant service by following this link and hitting `Create`:
 
 Import the Assistant workspace.json:
 
-* Find the Assitant service in your IBM Cloud Dashboard.
+* Find the Assistant service in your IBM Cloud Dashboard.
 * Click on the service - take a note of the credeantials 'API Key' and 'URL' as you will need these later.
 * To start building the skill, click on `Launch Watson Assistant`.
 * Go to the `Skills` tab.
@@ -52,7 +52,7 @@ Create an Assistant:
 * Click `Create Assistant`
 * Name your assistant: e.g. 'Watson Assistant' and click `Create assistant`
 * Click `Add dialog skill`
-* Select the previously created skill 'Alexa sample'
+* Select the previously created skill - 'Alexa sample'
 
 To find the 'Assistant ID' for Watson Assistant:
 
