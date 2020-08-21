@@ -29,7 +29,7 @@ In a terminal, run:
 
 ### 2. Create a Watson Assistant workspace
 
-Sign up for an [IBM CLoud](https://ibm.biz/BdzMQp) if you don't have an IBM Cloud account yet.
+Sign up for an [IBM CLoud](https://ibm.biz/freeaccount) if you don't have an IBM Cloud account yet.
 
 Create the Watson Assistant service by following this link and hitting `Create`:
 
