@@ -91,7 +91,7 @@ Import a Node-Red flow into the canvas:
 
 ### 4. Create an Alexa skill
 
-Sign up for an Amazon Developer Portal account <a href="https://developer.amazon.com" target="_blank">here</a>.
+Sign up for an Amazon Developer Portal account <a href="https://developer.amazon.com"  target="_blank">here</a>.
 
 Go to [https://developer.amazon.com/alexa/console/ask](https://developer.amazon.com/) and click the `Create Skill` button.
 
