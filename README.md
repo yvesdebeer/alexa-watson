@@ -15,7 +15,7 @@ In this Code Pattern, we will create an Alexa skill as a vocal interface towards
 # Included components
 
 * [Watson Assistant](https://www.ibm.com/watson/ai-assistant/): Create a chatbot with a program that conducts a conversation via auditory or textual methods.
-* [OpenWhisk](https://cloud.ibm.com/openwhisk): Execute code on demand in a highly scalable, serverless environment.
+* [IBM Cloud Functions](https://cloud.ibm.com/openwhisk): Execute code on demand in a highly scalable, serverless environment.
 * [Node-Red](https://nodered.org/): An open-source programming tool for wiring together hardware devices, APIs and online services.
 
 # Steps
@@ -35,27 +35,29 @@ Create the Watson Assistant service by following this link and hitting `Create`:
 
 * [Watson Assistant](https://cloud.ibm.com/catalog/services/conversation)
 
-Import the Assistant workspace.json:
+Import the Assistant skill :
 
 * Find the Assistant service in your IBM Cloud Dashboard.
-* Click on the service - take a note of the credeantials 'API Key' and 'URL' as you will need these later.
+* Click on the service - take a note of the credentials 'API Key' and 'URL' as you will need these later.
+* Click `Launch Watson Assistant`.
 * To start building the skill, click on `Launch Watson Assistant`.
-* Click `Create assistant`.
-* Go to the `Skills` tab.
-* Click `Create Skill` and click `Next`
+* Go to the `Skills` tab (second icon from menu on the left)
+* Click `Create Skill` and click `Next`.
+* Select `Dialog Skill` and click `Next`.
 * Click the `Import Skill` tab.
-* Click `Choose JSON File`, go to your cloned repo dir, and `Open` the 'workspace.json' file
-* Select `Everything (Intents, Entities, and Dialog)` and click Import.
+* Click `Choose JSON File`, go to your cloned repo dir, `Open` the 'workspace.json' file
+and click `Import`.
+* You have just added the "Alexa Sample" skill.
 
 Create an Assistant:
 
-* Go to the `Assistants`tab
+* Go to the `Assistants`tab (first icon from the menu on the left)
 * Click `Create Assistant`
 * Name your assistant: e.g. 'Watson Assistant' and click `Create assistant`
 * Click `Add dialog skill`
 * Select the previously created skill - 'Alexa sample'
 
-To find the 'Assistant ID' for Watson Assistant:
+Find the 'Assistant ID' for Watson Assistant:
 
 * Go back to the `Assistants` tab.
 * Click on the three dots in the upper right-hand corner of the card and select `Settings`.
@@ -70,11 +72,13 @@ Click on `Try it` in the top right corner of the screen and start your first con
 ### 3. Create a Node-Red development environment
 
 * On the IBM Cloud Dashboard, click `Catalog` on the top bar and search for 'Node-RED'.
-* Select the `Node-RED Starter` tile
+* Type 'Node-RED' in the search field.
+* Select the `Node-RED App` tile
+* Select the `Create` tab
 * Give the 'App name' a unique name e.g. '\<your initials\>-nodered' and click `Create`
 
 The deployment takes a couple of minutes to complete, so be patient...
-Once the deployment is successfully completed, go to the Node-Red URL by clicking on the `Visit App URL`.
+Once the deployment is successfully completed, go to the Node-Red URL by clicking on the `Visit App URL` of your Node-Red Cloud Foundry App.
 
 Next, complete the Node-RED initial set-up wizard. Click `Next` on the first screen and choose a userid and password on the second one to secure your Node-RED environment. Click `Next` and `Next` again to go to the final overview page of the wizard. Click `Finish`to complete it.
 
@@ -84,7 +88,8 @@ Import a Node-Red flow into the canvas:
 
 * Select `Import` - `Clipboard` from the top right menu ('hamburger'-icon)
 * Click `select a file to import`
-* Select `alexawebhookflow.json` from the cloned repository and click `Import`
+* Select `alexawebhookflow.json` from the cloned repository
+* Select `Import to new flow` and click `Import`
 * Configure the Watson Assistant node 'Alexabot' by double clicking on the node in the flow
 * Fill in the 'API Key', Service Endpoint, and 'Assistant ID' with the values you noted earlier.
 * Finally hit the red `Deploy' button on the top.
@@ -96,16 +101,17 @@ Sign up for an Amazon Developer Portal account <a href="https://developer.amazon
 Go to [https://developer.amazon.com/alexa/console/ask](https://developer.amazon.com/) and click the `Create Skill` button.
 
 * Enter a 'Skill name' e.g. 'Watson' and click `Create skill`
-* Select the 'Start from scratch' template and hit the `Choose` button.
-* Provide an invocation name 'Watson' or 'weather channel'
-* Add a custom slot type: In the left sidebar menu, click on 'Slot Types (#)' and hit '+ Add'.
-* Use the name 'BAG_OF_WORDS' and hit the `Create custom slot type` button.
+* Select the 'Hello World Skill' template and hit the `Continue with template` button.
+* Provide an invocation name 'ibm watson' or 'weather channel'
+* Add a custom slot type: In the left sidebar menu, click on `Assets` - `Slot Types (#)` and hit '+ Add Slot Type'.
+* Use the name 'BAG_OF_WORDS' and hit the `Next` button.
 * Now 'BAG_OF_WORDS' needs a slot value. Just enter `Hello World` and hit the plus sign so that it has a slot value.
-* Add a custom intent type: In the left sidebar menu, click on 'Intents (#)' and hit '+ Add'.
+* Add a custom intent type: In the left sidebar menu, click on `Interaction Model`- `Intents (#)` and hit `+ Add Intent`.
 * Use the name 'EveryThingIntent' and hit the `Create custom intent` button.
 * Add {EveryThingSlot} under Sample Utterances. Use the plus sign to create the EveryThingSlot.
 * Scroll down to 'Intent Slots (#)'
-* Use the 'Select a slot type' pulldown to give 'EveryThingSlot' the slot type 'BAG_OF_WORDS'.
+* Use the 'Select a slot type'-pulldown to give 'EveryThingSlot' the slot type 'BAG_OF_WORDS'.
+* Delete the 'HelloWorldIntent' from the list of Intents.
 
 **Configure the endpoint:**
 
@@ -114,6 +120,8 @@ Go to [https://developer.amazon.com/alexa/console/ask](https://developer.amazon.
 * For the Default Region enter the HTTPS service endpoint which is the URL of your Node-Red App and add '/alexa' to the URL.
 * Use the pull-down to select 'My development endpoint is a sub-domain of a domain that has a wildcard certificate from a certificate authority'.
 * Click the `Save Endpoints` button on the top!
+
+**Save & Build Model:**
 
 ### 5. Talk to it
 
@@ -129,23 +137,20 @@ You probably shouldn't publish this example, but you are now ready to create and
 
 ### 6. Create you own weather information service
 
-Most weather API's require geo coordinates in order to provide detailed weather information. This makes it hard to enter via a chatbot. Therefore we will make use of a Geo Coding API which will convert a named location into lat/lon coordinates. For the weather service, we can make use of the Weather Company API. This service is available for free for registered IBM Cloud users (not Lite accounts). Alternatively access to this API is granted during the 'CallForCode' challenge (until October 13,2019).
+Most weather API's require geo coordinates in order to provide detailed weather information. This makes it hard to enter via a chatbot. Therefore we will make use of a Geo Coding API which will convert a named location into lat/lon coordinates. For the weather service, we can make use of the OpenWeatherMap API. This service is available for free for registered users.
 
 **Here is what you need to do, to get access to the weather API:**
 
-* Register on [Welcome to The Weather Company API Platform Site Powering the best Weather Apps & Sites](https://callforcode.weather.com/)
-* You will get a mail with the apikey
-* Then you can use the [documentation](https://weather.com/swagger-docs/call-for-code) to access the API
+* Register on [OpenWeatherMap](https://openweathermap.org/)
+* Once you are registered and logged in you can generate an apikey
 
 **Import a Node-Red flow and configure the weather services API's:**
 
 * Go back to your Node-Red canvas
-* Select `Manage Palette` via the top right 'hamburger'-icon menu
-* Install a module 'node-red-contrib-gzip'
 * Select `Import` - `Clipboard` from the top right 'hamburger'-icon menu
 * Click `select a file to import`
 * Select 'weatherserviceflow.json' from the cloned repository and click `Import`
-* Configure the node 'API Weather.com' by double clicking on the node in the flow
+* Configure the node 'API OpenWeatherMap' by double clicking on the node in the flow
 * Replace the 'API Key' with your key within the URL parameter
 * Finally hit the red `Deploy' button on the top.
 
@@ -158,12 +163,14 @@ You can now test the weather service flow by injecting some data via the inject 
 * Click `Create` and `Create Action`
 * Give the action a name e.g. 'getWeather' and click `Create`
 * Replace the Node.js code with the code from the cloned repo file: 'getWeather.js'
+* Replace the '<node-red-url>' part of the url variable so it refers to your weather api within Node-RED.
 * Click on `Endpoints`from the menu on the left and click `Enable as Web Action`
 * Note down the HTTP Method URL: e.g. 'https://eu-gb.functions.cloud.ibm.com/api/v1/web/IBMBelgium_dev/default/getWeather.json'
+* Click on Code
 
-Now you can test the Cloud function  via the `Invoke`button, but first you need to specify an input:
+Now you can test the Cloud function via the `Invoke` button, but first you need to specify an input:
 
-* Click on `Change Input` and add following JSON : 
+* Click on `Invoke with parameters` and add following JSON :  
 	{
     	"location":"Brussels"
 	}
@@ -173,12 +180,16 @@ Now you can test the Cloud function  via the `Invoke`button, but first you need 
 
 ### 8. Configure the Watson Assistant dialog to call the weather Cloud function
 
-* Open the Watson Assistant skill 'Alexa Sample' and select the `Dialog`tab
+* Open the Watson Assistant skill 'Alexa Sample' and select the `Dialog` tab
 * Click the 'Weather'-node
-* Goto the section 'Then respond with' and click the 'Customize Response' button (Small wheel icon next to '$location' - IF ASSISTANT RECOGNIZES)
+* Goto the section 'Assistant Responds' and click the 'Customize Response' button (Small wheel icon next to '$location' - 'If assistant recognizes')
 * Click the 3 dots next to 'Then set context' and `Open JSON editor`
-* Modify the action name and replace it with the one you noted down in the previous step (only use the portions of the URL after .../api/v1/web/)
+* Modify the action name and replace it with the one you noted down in the previous step (only use the portions of the URL after .../api/v1/web/) e.g. 'IBMBelgium_dev/default/getWeather.json'
 * Click `Save` and test either using the `Try it` button or directly via Alexa Echo or Simulator.
+
+Now you are ready to test the chatbot for weather information. 
+For example you could ask 'What do you know about me' or 'What's the weather'.
+
 
 
 
